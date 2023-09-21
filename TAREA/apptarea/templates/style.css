@@ -1,0 +1,360 @@
+	
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	background: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.arriba {
+	margin-top:-50px;
+	background-color: aqua !important;
+
+
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+	flex: 0 0 auto;
+}
+
+
+.category {
+    text-align: center;
+	width: 25%;
+	height: 300px;
+	margin:15px;
+}
+
+.category img {
+    width: 150px;
+    height: 150px;
+}
+.card{
+    min-height: 300px;
+}
+	
+.btn1 { width: 25%
+}
+#terror{
+    background-image: url(https://media.revistagq.com/photos/5efedc2009f9a6fc5dffb3b4/4:3/w_960,h_720,c_limit/Resident-Evil-4-Remake.jpg);
+    background-size: cover;
+    
+}
+#accion{
+    background-image: url(https://www.xtrafondos.com/descargar.php?id=3172&vertical=1);
+    background-size: cover;
+}
+#lucha{
+    background-image: url(https://www.xtrafondos.com/wallpapers/vertical/guile-street-fighter-6-10173.jpg);
+    background-size: cover;
+}
+#deporte{
+    background-image: url(https://www.nme.com/wp-content/uploads/2021/06/madden-22-2000x1270-1-696x442.jpg);
+    background-size: cover;    
+}
+#carreras{
+    background-image: url(https://assetsio.reedpopcdn.com/digitalfoundry-2021-forza-horizon-5-xbox-platform-comparison-1636142678668.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp);
+    background-size: cover;    
+}
+.main-banner {
+    background-image: url(https://www.sector.sk/files/novinky/0/2023/5-27-11-4-26/diablo-ukazuje-svoj-pribeh-z-k-image-329.jpg) ;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 225px 0px;
+}
+	
+.features {
+    margin-top: -120px;
+}	
+
+/*.features .item {
+    padding: 35px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+	border: 6px solid #fff;
+	position: relative;
+}	
+	*/
+	
+ .features .item {
+    padding: 15px 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+    border: 6px solid #fff;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+ .features .item:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+ .features .item:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}	
+	
+	
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 90%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}	
+	
+	
+	
+	
+.cattitle {
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+	left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background-color: #008af8;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 15px 6px 15px;
+}	
+	
+	
+footer p {
+    text-align: center;
+    line-height: 90px;
+    color: #777;
+    font-size: 16px;
+    font-weight: 400;
+}
+.features {
+    margin-top: -120px;
+}	
+
+/*.features .item {
+    padding: 35px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+	border: 6px solid #fff;
+	position: relative;
+}	
+	*/
+	
+ .features .item {
+    padding: 15px 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+    border: 6px solid #fff;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+ .features .item:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+ .features .item:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}	
+	
+	
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 90%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}	
+	
+	
+	
+	
+.cattitle {
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+	left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background-color: #008af8;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 15px 6px 15px;
+}	
+	
+	
+footer p {
+    text-align: center;
+    line-height: 90px;
+    color: #777;
+    font-size: 16px;
+    font-weight: 400;
+}
+	
+	
+.sec-heading {
+    margin-bottom: 70px;
+	text-align: center!important;
+}	
+.sec-heading h6 {
+    color: #ee626b;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.sec-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 44px;
+	color:#A5A4A4;
+}
+	
+
+	
+.gaming-library {
+    margin-top: 10px;
+    padding: 30px;
+    background-color: #1f2122;
+    border-radius: 23px;
+	width: 90%;
+}	
+.gaming-library .item2 {
+    border-bottom: 1px solid #27292a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}	
+	
+.left {
+    width: 20%;
+}
+.right {
+    width: 50%;
+}
+	
+.main-button {
+    margin-top: 1px;	
+}
+.main-button a {
+    display: inline-block;
+    background-color: rgb(238, 98, 107);
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 30px;
+    border-radius: 25px;
+    transition: all 0.3s ease 0s;
+}
+.page-heading span {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+}	
+.breadcrumb {
+	 color: #fff;
+}
+.breadcrumb a {
+	 color: #fff;
+}	
+.page-heading {
+    text-align: center;
+}
+.page-heading h3 {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}	
+	
