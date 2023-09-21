@@ -1,30 +1,32 @@
+from django.shortcuts import render
+
+# Create your views here.
 from django.http import HttpResponse
-from .models import Producto
-from .forms import ProductoForm
-from django.shortcuts import render, redirect
-from django.urls import reverse
 
 
 def index(request):
-    return render(request, 'index.html')
+    return HttpResponse("Wena choro")
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from django.contrib.auth.decorators import login_required
 
+@login_required
+def register(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('login')
+    else:
+        form = UserCreationForm()
+    return render(request, 'registration/register.html', {'form': form})
 
-def get_productos(request):
-    listado_productos = Producto.objects.order_by("descripcion")
-    context = {"listado": listado_productos}
-    return render(request, "productos.html", context)
-
-def add_producto(request):
-    if request. method == 'GET':
-        context = { "form": ProductoForm() }
-        return render(request, "add_producto.html", context)
-    
-    elif request.method == 'POST':
-        producto_form = ProductoForm(data=request.POST)
-        if producto_form.is_valid():
-            producto_form.save()
-            return redirect(reverse("get_productos")) 
-        else:
-            producto_form = ProductoForm()
-            context = {"error" : "Existen errores en el formulario"}
-            return render(request, "add_producto.html", context)
+@login_required
+def update_profile(request):
+    if request.method == 'POST':
+        form = UserChangeForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            return redirect('update_profile')
+    else:
+        form = UserChangeForm(instance=request.user)
+    return render(request, 'registration/update_profile.html', {'form': form})
